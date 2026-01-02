@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard | MentorHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>MentorHub</h1>
+    <p>Admin Dashboard</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="#" onclick="logout()">Logout</a>
+
+  </nav>
+
+  <main>
+    <h2>Add New Content</h2>
+
+    <form id="contentForm">
+      <label>Category</label>
+      <select id="category">
+        <option>Java</option>
+        <option>Spring Boot</option>
+        <option>Interview Prep</option>
+      </select><br><br>
+
+      <label>Title</label>
+      <input type="text" id="title" required><br><br>
+
+      <label>Content</label>
+      <textarea id="content" rows="5" required></textarea><br><br>
+
+      <button type="submit">Add Content</button>
+    </form>
+
+    <h2>Uploaded Content</h2>
+    <div id="contentList"></div>
+  </main>
+
+  <footer>
+    <p>© 2026 MentorHub</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
