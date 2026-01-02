@@ -72,3 +72,45 @@ button {
 button:hover {
   background: #1a252f;
 }
+/* Mentor name & tagline */
+.mentor-name {
+  font-size: 18px;
+  margin: 5px 0;
+  font-style: italic;
+}
+
+.tagline {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Header gradient */
+header {
+  background: linear-gradient(135deg, #2c3e50, #4b6cb7);
+}
+
+/* Cards */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
